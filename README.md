@@ -10,6 +10,7 @@ Work in progress:
  - add english language in the program (other languages from the game optionally)
  - add search for different tiers of items
  - rewrite interface on QT
+
 Done:
  - removed dependence from a third-party file
  
@@ -25,6 +26,7 @@ Done:
  - добавить поиск по разным тирам предметов
  - убрать необходимость во внешнем файле с предметами
  - переписать интерфейс на QT
+
 Сделано:
  - убрана необходимость в дополнительном файле
 
