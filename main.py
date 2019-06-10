@@ -7,6 +7,7 @@ def make_dict_for_search():
         makes russian localized dict with items and their id's
     """
     rus_names = {}
+    eng_names = {}
     data_of_all_tems_from_api = requests.get(
         "https://raw.githubusercontent.com/broderickhyman/ao-bin-dumps/master/formatted/items.json"
         ).json()
@@ -16,7 +17,9 @@ def make_dict_for_search():
         for item_info in data_of_all_tems_from_api[i]["LocalizedNames"]:
             if item_info["Key"] == "RU-RU":
                 rus_names[item_info["Value"]] = data_of_all_tems_from_api[i]["UniqueName"]
-    return rus_names
+            if item_info["Key"] == "EN-US":
+                eng_names[item_info["Value"]] = data_of_all_tems_from_api[i]["UniqueName"]
+    return rus_names, eng_names
 
 def make_request_for_data(item_name):
     """
