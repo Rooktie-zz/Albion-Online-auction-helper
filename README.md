@@ -1,5 +1,7 @@
 # Albion-Online-auction-helper
 
+BIG UPDATE WILL BE SOON WITH SUPPORT ALL INGAME LANGUAGES AND SOME INNER CHANGES
+
 It's a first version of non game auction checker for Albion Online.
 
 Some description:
